@@ -22,11 +22,10 @@ class QuestionController extends AbstractController
      */
     public function homepage(Environment $twigEnvironment)
     {
-        $html = $twigEnvironment->render('question/homepage.html.twig');
+//        $html = $twigEnvironment->render('question/homepage.html.twig');
+//        return new Response($html);
 
-        return new Response($html);
-
-//        return $this->render('question/homepage.html.twig');
+        return $this->render('question/homepage.html.twig');
     }
 
     /**
